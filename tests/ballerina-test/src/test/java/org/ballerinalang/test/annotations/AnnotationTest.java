@@ -329,7 +329,7 @@ public class AnnotationTest {
                 "incompatible types: expected 'string', found 'int'", 3, 24);
     }
 
-    @Test(description = "Test an invalid constant annotation", enabled = false)
+    @Test(description = "Test an invalid constant annotation")
     public void testInvalidConstantAnnotation() {
         CompileResult resultNegative = BCompileUtil
                 .compile(this, "test-src", "lang/annotations/invalid-constant-annotation.bal");
